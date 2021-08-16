@@ -1,0 +1,28 @@
+<div class="container-fluid" style="margin-left :100px; margin-top: 20px;">
+    <div class="row">
+        <div class="form-group">
+            <label> Isbn : </label>
+            <input type="text" placeholder="Isbn Number" #isbn>
+        </div>
+        <div>
+            <label> Book Title : </label>
+            <input type="text" placeholder="Book Title" #bookTitle>
+        </div>
+        <div>
+            <label> Author : </label>
+            <input type="text" placeholder="Author Name" #author>
+        </div>  
+        <div>
+            <label> Price : </label>
+            <input type="text" placeholder="Price of the Book" #price>
+        </div>
+        <div>
+            <label> Description : </label>
+            <input type="text" placeholder="Description" #desc>
+        </div>
+        <div>
+            <button class="btn btn-secondary btn-sm" (click) = "onAddBook(isbn.value,bookTitle.value,author.value,price.value,desc.value)" style="margin-left: 10px;"> Add To Book List </button>
+        </div>
+    </div>
+</div>
+

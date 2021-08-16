@@ -1,0 +1,26 @@
+
+<div class="container-fluid">
+    <table class = "table table-striped">
+        <tbody>
+            <tr>
+                <td> <button (click) = "toggleCollapse()"> {{books.isbn}} </button> </td>
+                <td> {{books.title}} </td>
+                <td> {{books.author}} </td>
+                <td> {{books.price}} </td>
+                <td> {{books.description}} </td>
+              </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container-fluid" *ngIf = "!isCollapsed">
+    <h6> ISBN No : {{books.isbn}} </h6>
+    <h6> Book Title : {{books.title}} </h6>
+    <h6> Book Author : {{books.author}} </h6>
+    <h6> Book Price : {{books.price}} <button> Change Price </button></h6>
+    <p> Description : {{books.description}} <button> Change Description </button> </p>  
+</div>
+
+
+
+
